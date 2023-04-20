@@ -37,7 +37,7 @@ document.addEventListener(
         debug: 3,
         config: {
           iceServers: [
-            { url: "stun:108.177.98.127:19302" },
+            { url: "stun.l.google.com:19302" },
             {
               url: "turn:numb.viagenie.ca",
               credential: "muazkh",
