@@ -26,10 +26,10 @@
         <h3 class="col-sm-12 text-center">Videochat Demo</h3>
         <div class="clearfix"></div>
         <!-- The ID of your current session -->
-        <h4 class="text-center" style="display: none">
+        <h4 class="text-center">
           <span id="peer-id-label"></span>
         </h4>
-        <h4 class="text-center" style="display: none">
+        <h4 class="text-center">
           <span id="peer-id-label2"></span>
         </h4>
 
@@ -37,7 +37,7 @@
           <div class="col-sm-12 text-center">
             <button
               class="btn btn-danger"
-              style="display: none"
+             
               id="btnClose"
               type="button"
             >
@@ -45,7 +45,7 @@
             </button>
           </div>
         </div>
-        <div style="display: none" id="divWait" class="row">
+        <div id="divWait" class="row">
           <div class="col-sm-12 text-center">
             <h4>Please wait while we save the session recording..</h4>
             <img src="resources/ajax-loader.gif" border="0" />
@@ -55,7 +55,7 @@
         <div class="col-md-12 col-lg-12">
           <div class="form-horizontal" id="connection-form">
             <fieldset>
-              <div class="form-group" style="display: none">
+              <div class="form-group">
                 <label for="name" class="col-lg-2 control-label"
                   >Username</label
                 >
@@ -73,7 +73,7 @@
                 <div class="col-lg-10">
                   <input
                     type="text"
-                    style="display: none"
+                   
                     class="form-control"
                     name="peer_id"
                     id="peer_id"
@@ -96,7 +96,7 @@
                   <button
                     id="connect-to-peer-btn"
                     class="btn btn-primary"
-                    style="display: none"
+                   
                   >
                     Connect to Peer
                   </button>
@@ -111,10 +111,10 @@
               <div class="list-group" id="messages"></div>
             </div>
             <div id="message-container">
-              <div class="form-group" style="display: none">
+              <div class="form-group">
                 <label class="control-label">Live chat</label>
                 <div class="input-group">
-                  <span class="input-group-btn" style="display: none">
+                  <span class="input-group-btn">
                     <button id="call" class="btn btn-info">Call</button>
                   </span>
                   <input
@@ -155,13 +155,13 @@
           <span class="label label-info" id="label1"></span>
           <br />
           <br />
-          <button style="display: none" id="btnRecord" class="btn btn-danger">
+          <button id="btnRecord" class="btn btn-danger">
             Start Recording
           </button>
           <br />
           <div id="divTimer"></div>
           <br />
-          <div id="divDownload" style="display: none">
+          <div id="divDownload">
             <b>My Recording</b><br />
 
             <video id="recording" width="300" height="300" controls></video>
@@ -188,11 +188,11 @@
       </div>
     </div>
 
-    <div style="display: none">
+    <div>
       <div class="left">
-        <div id="startButton" class="button" style="display: none">Start</div>
+        <div id="startButton" class="button">Start</div>
         <video
-          style="display: none"
+         
           id="preview"
           width="160"
           height="120"
@@ -202,13 +202,13 @@
       </div>
 
       <div class="right">
-        <div id="stopButton" class="button" style="display: none">Stop</div>
+        <div id="stopButton" class="button">Stop</div>
       </div>
 
       <div
         id="log"
         style="width: 100%; height: 200px; overflow: auto"
-        style="display: none"
+       
       ></div>
     </div>
 
