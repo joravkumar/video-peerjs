@@ -13,7 +13,7 @@ var ifaces = os.networkInterfaces();
 var moment = require("moment");
 const { exec } = require("child_process");
 
-var FILEPATH = __dirname + "data/";
+var FILEPATH = __dirname + "/data/";
 
 // Public Self-Signed Certificates for HTTPS connection
 // var privateKey = fs.readFileSync("./../certificates/key.pem", "utf8");
