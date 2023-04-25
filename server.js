@@ -81,7 +81,7 @@ Object.keys(ifaces).forEach(function (ifname) {
 // Allow access from all the devices of the network (as long as connections are allowed by the firewall)
 var LANAccess = "0.0.0.0";
 // For http
-httpServer.listen(process.env.PORT || 8000, LANAccess);
+httpServer.listen(process.env.PORT || 3000, LANAccess);
 // For https
 // httpsServer.listen(8443, LANAccess);
 
@@ -174,13 +174,13 @@ app.get("/delete-recording-flag", function (req, res) {
 
 app.post("/save-recording", function (req, res) {
   console.log("save-recording");
-  var fname = Math.random() + req.body.fname ;
+  var fname = Math.random() + req.body.fname;
   console.log("Saving " + fname, process.cwd());
   var base64Data = req.body.file.replace(/^data:(.*?);base64,/, "");
   base64Data = base64Data.replace(/ /g, "+");
 
   var webmFile = Buffer.from(base64Data, "base64");
-  if (!fs.existsSync(FILEPATH)) fs.mkdirSync(FILEPATH)
+  if (!fs.existsSync(FILEPATH)) fs.mkdirSync(FILEPATH);
   fs.writeFile(FILEPATH + fname, webmFile, function (err) {
     if (err) {
       console.log("File write error:" + err);
